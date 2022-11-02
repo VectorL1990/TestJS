@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--for scaling across various devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!--set the color for the URL bar on Chrome on Android phones/tablets-->
+    <meta name="theme-color" content="#000000">
+
+    <title>Title of Page</title> 
+
+    <!--stylesheet--> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!--javascript-->
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <h1 id="files">Hello World</h1>
+</body>
+<script>
+    this.container = document.body;
+    this.root = this.container;
+    var testDiv = document.createElement("div");
+    
+    var e2 = document.createElement("select");
+    e2.options[0] = new Option("test option", "");
+    e2.size = "2";
+    testDiv.append(e2);
+    this.root.appendChild(testDiv);
+
+</script>
+</html>
